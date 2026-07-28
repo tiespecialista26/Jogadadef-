@@ -1,0 +1,427 @@
+/*=========================================
+  JOGADA DE FÉ
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#071d35;
+    color:#fff;
+}
+
+/* TOPO */
+
+.topo{
+    width:100%;
+    background:#02111f;
+    text-align:center;
+    padding:10px;
+}
+
+.topo img{
+    max-width:100%;
+    height:auto;
+}
+
+/* MENU */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#0b2340;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo img{
+    height:80px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover,
+nav a.ativo{
+    color:#FFD400;
+}
+
+/* BANNER */
+
+.banner{
+    min-height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.logo-banner{
+    width:230px;
+    margin-bottom:20px;
+}
+
+.banner h1{
+    font-size:60px;
+    color:#FFD400;
+}
+
+.banner h2{
+    margin:20px 0;
+    font-size:30px;
+}
+
+.banner p{
+    font-size:20px;
+}
+
+/* BOTÕES */
+
+.botoes{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn,
+.btn-whats{
+
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+
+}
+
+.btn{
+    background:#FFD400;
+    color:#000;
+}
+
+.btn-whats{
+    background:#25D366;
+    color:#fff;
+}
+
+.btn:hover,
+.btn-whats:hover{
+    transform:translateY(-5px);
+}
+
+/* SEÇÕES */
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    color:#FFD400;
+    margin-bottom:25px;
+}
+
+section p{
+    text-align:center;
+    line-height:1.8;
+}
+
+/* SOBRE HOME */
+
+.sobre-home{
+    max-width:1000px;
+    margin:auto;
+}
+
+/* PÁGINAS */
+
+.pagina{
+    background:#0d2b4f;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.pagina h1{
+    font-size:45px;
+    color:#FFD400;
+}
+
+/* CONTEÚDO */
+
+.conteudo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.foto img{
+    width:300px;
+    border-radius:20px;
+    border:5px solid #FFD400;
+}
+
+.texto{
+    max-width:700px;
+}
+
+.texto h2{
+    text-align:left;
+}
+
+.texto p{
+    text-align:left;
+    margin-bottom:20px;
+}
+
+/* APRESENTADOR */
+
+.leandro{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.leandro img{
+    width:300px;
+    border-radius:20px;
+    border:5px solid #FFD400;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:#0d2b4f;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:45px;
+    color:#FFD400;
+    margin-bottom:15px;
+}
+
+/* REDES */
+
+.cards-redes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.rede-card{
+    background:#0d2b4f;
+    padding:40px 25px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.rede-card i{
+    font-size:60px;
+    color:#FFD400;
+    margin-bottom:20px;
+}
+
+.rede-card h2{
+    margin-bottom:15px;
+}
+
+.rede-card p{
+    margin-bottom:25px;
+}
+
+/* ÍCONES */
+
+.icones{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+}
+
+.icones a{
+    color:#fff;
+    font-size:55px;
+    transition:.3s;
+}
+
+.icones a:hover{
+    color:#FFD400;
+    transform:scale(1.2);
+}
+
+/* VOLTAR */
+
+.voltar{
+    text-align:center;
+}
+
+/* RODAPÉ */
+
+footer{
+    background:#02111f;
+    text-align:center;
+    padding:35px;
+}
+
+footer img{
+    height:80px;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* BOTÃO WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-decoration:none;
+    font-size:35px;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+/* ANIMAÇÕES */
+
+section{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+section.mostrar{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.menu-scroll{
+    background:#02111f;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.banner h1{
+    font-size:42px;
+}
+
+.banner h2{
+    font-size:24px;
+}
+
+.logo img{
+    height:70px;
+}
+
+.texto h2,
+.texto p{
+    text-align:center;
+}
+
+}
+
+@media(max-width:600px){
+
+.banner h1{
+    font-size:34px;
+}
+
+.banner h2{
+    font-size:20px;
+}
+
+.logo-banner{
+    width:170px;
+}
+
+section{
+    padding:60px 20px;
+}
+
+.pagina h1{
+    font-size:34px;
+}
+
+.foto img,
+.leandro img{
+    width:230px;
+}
+
+.icones{
+    gap:20px;
+}
+
+.icones a{
+    font-size:40px;
+}
+
+}
